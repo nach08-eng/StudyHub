@@ -220,4 +220,44 @@ border-radius: 0 0 15px 15px !important;
 	.contacts_card{
 	margin-bottom: 15px;
 }
+
 }
+
+/* Mobile optimizations */
+    @media (max-width: 480px) {
+      .chat-container {
+        height: 100vh;
+        max-height: 100%;
+        border-radius: 0;
+      }
+      
+      body {
+        padding: 0;
+      }
+      
+      .message {
+        max-width: 85%;
+      }
+      
+      .chat-header {
+        border-radius: 0;
+      }
+    }
+
+    /* Scrollbar styling */
+    #chatbox::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #chatbox::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    #chatbox::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    #chatbox::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
